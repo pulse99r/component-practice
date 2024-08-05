@@ -1,0 +1,33 @@
+#box{
+  border: 1px solid;
+  height: 180px;
+  width: 180px;
+}
+.red{
+  color: azure;
+  background-color: red;
+  text-align: center;
+}
+.red:hover,
+.blue:hover{
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
+}
+.red:hover:after{
+  cursor: pointer;
+  content: "Click to make box blue";
+}
+.blue{
+  background-color: rgb(100, 201, 212);
+  text-align: center;
+}
+/* .blue:hover{
+  cursor: pointer;
+  font-weight: 600;
+} */
+.blue:hover:after{
+  background-color: rgb(100, 201, 212);
+  content: "Click to make box RED";
+  font-weight: 600;
+}
