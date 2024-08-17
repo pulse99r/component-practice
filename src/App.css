@@ -1,5 +1,11 @@
 .app{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+#root{
+  background-color: rgb(230, 223, 223);
+  height: 95vh;
 }

@@ -1,22 +1,28 @@
 import './Box.css'
 import { useState } from 'react';
+import User from './User';
 
-const Box = () => {
-  const [color, setColor] = useState(true)
+const Box = (user) => {
+  const [color, setColor] = useState(false)
+  // const [user, setUser] = useState[]
 
   const handleClick = () => {
     {setColor(!color)}
   }
 
   return (
-    <div id="box" onClick={handleClick} className={color ? "red" : "blue"} >
+    <div id="box" onClick={handleClick} className={color ? "blue" : "red"} >
       {color ? (
-        <p>Red {color}</p>
+        <User user={user.user}/>
 
       ) : (
-          <p>Blue {color}</p>
+        <>
+          <p>RED</p>
+          <p>Click to display user on BLUE card</p>
+        </>
       )}
     </div>
+
   )
 }
 

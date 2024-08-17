@@ -1,7 +1,8 @@
 #box{
   border: 1px solid;
-  height: 180px;
-  width: 180px;
+  height: 260px;
+  margin: 20px auto;
+  width: 200px;
 }
 .red{
   color: azure;
@@ -10,13 +11,15 @@
 }
 .red:hover,
 .blue:hover{
+  border: 1px solid white;
+  box-shadow: 3px 3px gray, 5px 5px 5px rgb(159, 86, 86);
   cursor: pointer;
-  font-size: larger;
+  /* font-size: larger; */
   font-weight: 600;
 }
 .red:hover:after{
   cursor: pointer;
-  content: "Click to make box blue";
+  /* content: "Click to make box blue"; */
 }
 .blue{
   background-color: rgb(100, 201, 212);
@@ -25,9 +28,10 @@
 /* .blue:hover{
   cursor: pointer;
   font-weight: 600;
-} */
-.blue:hover:after{
-  background-color: rgb(100, 201, 212);
-  content: "Click to make box RED";
-  font-weight: 600;
+  } */
+  .blue:hover:after{
+    background-color: rgb(100, 201, 212);
+    border: 1px solid white;
+  /* content: "Click to make box RED"; */
+  /* font-weight: 600; */
 }
